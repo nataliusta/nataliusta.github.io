@@ -3,26 +3,33 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header>
-        <a>
-          <img className='logo__icon' src='' width='33' height='38' alt='' aria-hidden="true" />
-          <img className='logo__image' src='' width='101' height='18' alt='' />
+      <header className='page-header'>
+        <a className='page-header__logo logo'>
+          <picture>
+            <img className='logo__icon' src='' width='33' height='38' alt='' aria-hidden="true" />
+          </picture>
+          <picture>
+            <img className='logo__text' src='' width='101' height='18' alt='' />
+          </picture>
         </a>
-        <nav>
-          <div>
-            <ul>
-              <li>
-                <a href=''>
+        <nav className='main-nav main-nav--closed main-nav--nojs'>
+          <button className='main-nav__toggle' type='button'> 
+            <span className='visually-hidden'>Открыть меню</span>
+          </button>
+          <div className='main-nav__wrapper wrapper'>
+            <ul className='main-nav__list site-list'>
+              <li className='site-list__item'>
+                <a className='site-list__link'>
                   Home
                 </a>
               </li>
-              <li>
-                <a href=''>
+              <li className='site-list__item'>
+                <a className='site-list__link' href='products.html'>
                   Products
                 </a>
               </li>
-              <li>
-                <a href=''>
+              <li className='site-list__item'>
+                <a className='site-list__link' href='#'>
                   <img src='' alt='Basket' />
                 </a>
               </li>
@@ -31,96 +38,90 @@ function App() {
         </nav>
       </header>  
 
-      <main>
-        <section className='Discover'>
-          <div>
-            <h1 className='visually-hidden'>
-              Discover the vast expanses of space
-            </h1>
-            <p className='main-heading'>
+      <main className='page-main'>
+        <section className='promo'>
+          <div className='promo__wrapper wrapper'>
+            <h1 className='promo__heading'>
               <strong>
                 Discover the vast expanses of <span>space</span>
               </strong>
-            </p>
-            <p className='text-heading'>
+            </h1>
+            <p className='promo__slogan-text'>
               Where the possibilities are endless!
             </p>
-            <button type='button'>
+            <a className='promo__button button button--yellow' type='button' href='#'>
               Learn more
-            </button>
-            <img className='planet_logo' alt=''/>
+            </a>
+            <img className='promo_logo' alt=''/>
           </div>
         </section>
 
         <section className='offers'>
-          <h2 className='visually-hidden'>
+          <h2 className='offers__heading'>
             Offers
           </h2> 
-          <h3 className=''>
-            Offers
-          </h3> 
-          <ul className='offers-list'>
-            <li className='offers-list__item'>
-              <p className='main-heading'>
+          <ul className='offers__list'>
+            <li className='offers-list__item item'>
+              <h3 className='item__heading'>
                 <strong>
                 Move the borders of reality!
                 </strong>
-              </p>
-              <p className='text-heading'>
+              </h3>
+              <p className='item__text'>
                 Go on a space adventure - it's possible with us!
               </p>
-              <button type='button'>
+              <a className='item__button' type='button' href='#'>
                 Learn more
-              </button>
+              </a>
             </li>
-            <li className='offers-list__item'>
-              <p className=''>
+            <li className='offers-list__item item'>
+              <h3 className='item__heading'>
                 <strong>
                   Space is not just stars and planets
                 </strong>
-              </p>
-              <p className=''>
+              </h3>
+              <p className='item__text'>
                 Go on a space adventure 
               </p>
-              <button type='button'>
+              <a className='item__button' type='button' href='#'>
                 Learn more
-              </button>
+              </a>
             </li>
-            <li className='offers-list__item'>
-              <p className=''>
+            <li className='offers-list__item item'>
+              <h3 className='item__heading'>
                 <strong>
                   For those who dream of stars 
                 </strong>
-              </p>
-              <p className=''>
+              </h3>
+              <p className='item__text'>
                 Our offer: make your dream come true
               </p>
-              <button type='button'>
+              <a className='item__button' type='button' href='#'>
                 Learn more
-              </button>
+              </a>
             </li>
-            <li className='offers-list__item'>
-              <p className=''>
+            <li className='offers-list__item item'>
+              <h3 className='item__heading'>
                 <strong>
                   Fulfill your fantastic dreams
                 </strong>
-              </p>
-              <p className=''>
+              </h3>
+              <p className='item__text'>
                 Space has never been so close
               </p>
-              <button type='button'>
+              <a className='item__button' type='button' href='#'>
                 Learn more
-              </button>
+              </a>
             </li>
           </ul>
         </section>
 
-        <section>
-          <div className='article'>
-            <h2>
+        <section className='article'>
+          <div className='article__wrapper wrapper'>
+            <h2 className='article__heading'>
               Embark on a space journey
             </h2>
-            <p>
+            <p className='article__text'>
               Travelling into space is one of the most exciting and unforgettable adventures that can change your life forever. 
               And if you have ever dreamed of exploring stars, planets and galaxies, then our company is ready to help you realize this dream. 
               We offer a unique experience that will allow you to go on a space journey and see all the secrets of the universe.
@@ -128,17 +129,17 @@ function App() {
               Our team of professionals takes care of your safety and comfort so that you can fully enjoy your adventure in space. 
               We offer various options for space excursions.
             </p>
-            <button type='button'>
+            <button className='article__button button button--invisible' type='button'>
               Read more
             </button>
           </div>
         </section>
       </main>
 
-      <footer>
-        <div>
-          <img alt=''/>
-          <p>
+      <footer className='footer'>
+        <div className='footer__wrapper wrapper'>
+          <img className='footer__logo-image' alt=''/>
+          <p className='footer__text'>
             Exciting space adventure!
           </p>
         </div>

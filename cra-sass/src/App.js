@@ -2,7 +2,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className='app'>
       <header className='page-header'>
         <a className='page-header__logo logo'>
           <picture>
@@ -14,7 +14,7 @@ function App() {
         </a>
         <nav className='main-nav main-nav--closed main-nav--nojs'>
           <button className='main-nav__toggle' type='button'> 
-            <span className='visually-hidden'>Открыть меню</span>
+            <span className='visually-hidden'>Open menu</span>
           </button>
           <div className='main-nav__wrapper wrapper'>
             <ul className='main-nav__list site-list'>
@@ -41,6 +41,7 @@ function App() {
       <main className='page-main'>
         <section className='promo'>
           <div className='promo__wrapper wrapper'>
+            <img className='promo__picture' width='1242' height="490" alt='Discover..' />
             <h1 className='promo__heading'>
               <strong>
                 Discover the vast expanses of <span>space</span>
@@ -62,56 +63,68 @@ function App() {
           </h2> 
           <ul className='offers__list'>
             <li className='offers-list__item item'>
-              <h3 className='item__heading'>
-                <strong>
-                Move the borders of reality!
-                </strong>
-              </h3>
-              <p className='item__text'>
-                Go on a space adventure - it's possible with us!
-              </p>
-              <a className='item__button' type='button' href='#'>
-                Learn more
-              </a>
+              <img className='item__picture' width='1088' height="350" alt='Move the borders of reality!' />
+              <div className='item__content'>
+                <h3 className='item__heading'>
+                  <strong>
+                  Move the borders of reality!
+                  </strong>
+                </h3>
+                <p className='item__text'>
+                  Go on a space adventure - it's possible with us!
+                </p>
+                <a className='item__button button' type='button' href='#'>
+                  Learn more
+                </a>
+              </div>
             </li>
             <li className='offers-list__item item'>
-              <h3 className='item__heading'>
-                <strong>
-                  Space is not just stars and planets
-                </strong>
-              </h3>
-              <p className='item__text'>
-                Go on a space adventure 
-              </p>
-              <a className='item__button' type='button' href='#'>
-                Learn more
-              </a>
+              <img className='item__picture' width='524' height="350" alt='Space is not just stars and planets.' />
+              <div className='item__content'>
+                <h3 className='item__heading'>
+                  <strong>
+                    Space is not just stars and planets
+                  </strong>
+                </h3>
+                <p className='item__text'>
+                  Go on a space adventure 
+                </p>
+                <a className='item__button button' type='button' href='#'>
+                  Learn more
+                </a>
+              </div>
             </li>
             <li className='offers-list__item item'>
-              <h3 className='item__heading'>
-                <strong>
-                  For those who dream of stars 
-                </strong>
-              </h3>
-              <p className='item__text'>
-                Our offer: make your dream come true
-              </p>
-              <a className='item__button' type='button' href='#'>
-                Learn more
-              </a>
+              <img className='item__picture' width='524' height="350" alt='For those who dream of stars.' />
+              <div className='item__content'>
+                <h3 className='item__heading'>
+                  <strong>
+                    For those who dream of stars 
+                  </strong>
+                </h3>
+                <p className='item__text'>
+                  Our offer: make your dream come true
+                </p>
+                <a className='item__button button' type='button' href='#'>
+                  Learn more
+                </a>
+              </div>
             </li>
             <li className='offers-list__item item'>
-              <h3 className='item__heading'>
-                <strong>
-                  Fulfill your fantastic dreams
-                </strong>
-              </h3>
-              <p className='item__text'>
-                Space has never been so close
-              </p>
-              <a className='item__button' type='button' href='#'>
-                Learn more
-              </a>
+              <img className='item__picture' width='1088' height="350" alt='Fulfill your fantastic dreams.' />
+              <div className='item__content'>
+                <h3 className='item__heading'>
+                  <strong>
+                    Fulfill your fantastic dreams
+                  </strong>
+                </h3>
+                <p className='item__text'>
+                  Space has never been so close
+                </p>
+                <a className='item__button button' type='button' href='#'>
+                  Learn more
+                </a>
+              </div>
             </li>
           </ul>
         </section>

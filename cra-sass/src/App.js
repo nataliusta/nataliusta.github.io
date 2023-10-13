@@ -66,9 +66,7 @@ function App() {
               <img className='item__picture' width='1088' height="350" alt='Move the borders of reality!' />
               <div className='item__content'>
                 <h3 className='item__heading'>
-                  <strong>
                   Move the borders of reality!
-                  </strong>
                 </h3>
                 <p className='item__text'>
                   Go on a space adventure - it's possible with us!
@@ -82,9 +80,7 @@ function App() {
               <img className='item__picture' width='524' height="350" alt='Space is not just stars and planets.' />
               <div className='item__content'>
                 <h3 className='item__heading'>
-                  <strong>
                     Space is not just stars and planets
-                  </strong>
                 </h3>
                 <p className='item__text'>
                   Go on a space adventure 
@@ -98,9 +94,7 @@ function App() {
               <img className='item__picture' width='524' height="350" alt='For those who dream of stars.' />
               <div className='item__content'>
                 <h3 className='item__heading'>
-                  <strong>
                     For those who dream of stars 
-                  </strong>
                 </h3>
                 <p className='item__text'>
                   Our offer: make your dream come true
@@ -114,9 +108,7 @@ function App() {
               <img className='item__picture' width='1088' height="350" alt='Fulfill your fantastic dreams.' />
               <div className='item__content'>
                 <h3 className='item__heading'>
-                  <strong>
                     Fulfill your fantastic dreams
-                  </strong>
                 </h3>
                 <p className='item__text'>
                   Space has never been so close
